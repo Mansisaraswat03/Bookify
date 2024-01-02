@@ -10,7 +10,7 @@ const Orders = () => {
     firebase.fetchMyBooks(firebase.user.uid).then((books)=>setBooks(books.docs))
   },[firebase]);
 
-  if(!firebase.isLoggedIn) return <h1>please Login</h1>
+  if(!firebase.isLoggedIn) return <h2>Please <a href="/login">Login</a></h2>
   return (
     <div>
     {

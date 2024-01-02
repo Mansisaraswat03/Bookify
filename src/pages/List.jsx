@@ -12,6 +12,7 @@ const List = () => {
         e.preventDefault();
         await firebase.handleNewListing(name,isbnNumber,price,coverPic)
     }
+    if(firebase.isLoggedIn){
   return (
     <div className='container mt-5'>
     <Form onSubmit={handleSubmit}>
@@ -40,7 +41,13 @@ const List = () => {
       </Button>
     </Form>
     </div>
-  )
+  )}
+
+  else {
+    return(
+    <h2>Please <a href="/login">Login</a></h2>
+    )
+  }
 }
 
 export default List

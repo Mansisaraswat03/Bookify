@@ -42,6 +42,7 @@ const Login = () => {
     </Form>
     <h2 className='mt-2'>or</h2>
     <Button onClick={firebase.googleSignIn} variant='danger'>login with google</Button>
+    <p>Don't have an Account  <a href ="/register" >Login</a></p>
       
     </div>
   )

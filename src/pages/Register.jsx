@@ -42,6 +42,7 @@ const Register = () => {
       <Button variant="primary" type="submit">
         Create Account
       </Button>
+      <p>Already have an Account  <a href ="/login" >Login</a></p>
     </Form>
       
     </div>
